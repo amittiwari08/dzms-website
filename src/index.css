@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: theme("fontFamily.head");
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+::selection {
+  background: theme("colors.milano");
+  color: theme("colors.chiffon");
+}
+
+/* Reveal-on-scroll base state, toggled by the useReveal hook */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-line {
+  display: block;
+  overflow: hidden;
+}
+.reveal-line span {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-line.in-view span {
+  transform: translateY(0);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
+}
+
+@layer base {
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-chiffon px-4 py-[7px] text-[13px] font-semibold uppercase tracking-wider text-milano;
+  }
+  .section-title {
+    @apply mt-4 max-w-[680px] font-head text-[clamp(28px,3.6vw,44px)] font-bold;
+  }
+  .section-sub {
+    @apply mt-4 block max-w-[560px] text-base leading-relaxed text-muted;
+  }
+}
+
+/* Plain keyframes referenced directly via inline `animation` styles
+   (kept outside Tailwind's utility layer so they're never purged). */
+@keyframes confettiPop {
+  0% { opacity: 1; transform: translate(0, 0) rotate(0); }
+  100% { opacity: 0; transform: translate(var(--x), var(--y)) rotate(220deg); }
+}
+
+@keyframes rocket {
+  0% { transform: translateY(60px) scale(0.7); opacity: 0; }
+  60% { transform: translateY(-10px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); }
+}
