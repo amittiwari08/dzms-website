@@ -58,7 +58,7 @@ export default function Process() {
       <div className="mx-auto max-w-[1180px] px-7">
         <p className="eyebrow reveal-up in-view border-white/15 !bg-white/10 !text-chiffon">How We Work</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          A process built for clarity, from kickoff to growth.
+          A clear process from the first discussion to launch and ongoing improvement.
         </h2>
 
         <div ref={timelineRef} className="relative mt-[70px] grid grid-cols-1 gap-[34px] md:grid-cols-7 md:gap-[18px]">

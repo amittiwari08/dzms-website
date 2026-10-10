@@ -3,9 +3,9 @@ import Magnetic from "./Magnetic.jsx";
 import Logo from "./Logo.jsx";
 
 const MEGA = [
-  { heading: "Build", links: ["Website Development", "Mobile App Development", "Custom Software", "SaaS Development"] },
-  { heading: "Grow", links: ["AI Solutions & Automation", "SEO & Indexing", "Digital Marketing", "Branding & UI/UX"] },
-  { heading: "Run", links: ["Cloud & DevOps", "Hosting & Domains", "Maintenance & Support", "Performance Optimization"] }
+  { heading: "Build", links: ["IT Application Development Services", "Mobile App Development", "Enterprise Resource Planning", "Global Travel Services"] },
+  { heading: "Grow", links: ["Digital Marketing", "SEO & Search Indexing", "UI/UX Design", "AI Solutions & Automation"] },
+  { heading: "Run", links: ["Cloud Application Services", "IT Consulting", "IT Technical Management", "Domains & Hosting"] }
 ];
 
 export default function Navbar() {

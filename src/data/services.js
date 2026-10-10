@@ -1,38 +1,86 @@
 export const SERVICES = [
-  { name: "Website Development", tag: "Web", icon: "web",
-    desc: "Fast, conversion-focused websites — from marketing sites to complex content platforms — built to look premium on every screen.",
-    tags: ["Responsive design", "CMS integration", "Speed optimization", "SEO-ready"] },
-  { name: "Mobile App Development", tag: "Mobile", icon: "mobile",
-    desc: "Native-feeling iOS and Android apps built on modern cross-platform frameworks, from first prototype to app-store launch.",
-    tags: ["iOS & Android", "Push notifications", "Offline support", "App Store launch"] },
-  { name: "Custom Software", tag: "Software", icon: "software",
-    desc: "Bespoke internal tools and platforms designed around how your team actually works, not the other way around.",
-    tags: ["Internal tools", "Workflow automation", "Legacy migration", "Integrations"] },
-  { name: "SaaS Development", tag: "SaaS", icon: "saas",
-    desc: "Multi-tenant products built for scale — subscriptions, billing, permissions and onboarding, done right from day one.",
-    tags: ["Multi-tenant architecture", "Billing & subscriptions", "Role-based access", "Analytics"] },
-  { name: "AI Solutions & Automation", tag: "AI", icon: "ai",
-    desc: "Practical AI — chat assistants, automated workflows and intelligent search — that removes real work from your team's plate.",
-    tags: ["AI assistants", "Workflow automation", "Document intelligence", "Predictive tools"] },
-  { name: "SEO & Search Indexing", tag: "SEO", icon: "seo",
-    desc: "Technical and content SEO that gets you found by the people already searching for what you offer.",
-    tags: ["Technical SEO", "Local SEO", "Content strategy", "Search indexing"] },
-  { name: "Digital Marketing", tag: "Marketing", icon: "marketing",
-    desc: "Campaigns across search, social and email that turn visibility into a full pipeline, not just impressions.",
-    tags: ["Paid campaigns", "Social strategy", "Email marketing", "Conversion tracking"] },
-  { name: "Cloud & DevOps", tag: "Cloud", icon: "cloud",
-    desc: "Reliable infrastructure, CI/CD pipelines and monitoring so your product stays fast and up, even under load.",
-    tags: ["AWS / Azure / GCP", "CI/CD pipelines", "Monitoring & alerts", "Auto-scaling"] },
-  { name: "Branding & UI/UX", tag: "Design", icon: "design",
-    desc: "Identity systems and interface design that make your business feel as credible as the work you actually do.",
-    tags: ["Brand identity", "UI/UX design", "Design systems", "Prototyping"] },
-  { name: "Hosting & Domains", tag: "Infra", icon: "hosting",
-    desc: "Domain registration, managed hosting and DNS — set up once, monitored continuously, without the busywork.",
-    tags: ["Domain registration", "Managed hosting", "SSL & security", "DNS management"] },
-  { name: "Maintenance & Support", tag: "Support", icon: "support",
-    desc: "Ongoing updates, monitoring and a real team on call, so what we build keeps working long after launch.",
-    tags: ["Ongoing updates", "Uptime monitoring", "Priority support", "Security patching"] },
-  { name: "Performance Optimization", tag: "Speed", icon: "speed",
-    desc: "Audits and fixes that cut load times and boost Core Web Vitals — because slow costs you customers.",
-    tags: ["Core Web Vitals", "Image & asset optimization", "Caching strategy", "Lighthouse audits"] }
+  {
+    name: "IT Application Development Services",
+    tag: "Applications",
+    icon: "web",
+    desc: "Custom software engineering, modern web applications, API development, and legacy system modernization shaped around your business goals.",
+    tags: ["Web applications", "API development", "Custom software", "Legacy modernization"]
+  },
+  {
+    name: "Mobile App Development",
+    tag: "Mobile",
+    icon: "mobile",
+    desc: "User-friendly mobile applications for businesses that need useful tools, smoother workflows, and a reliable experience across devices.",
+    tags: ["Android & iOS", "Cross-platform apps", "API integration", "Product design"]
+  },
+  {
+    name: "Cloud Application Services",
+    tag: "Cloud",
+    icon: "cloud",
+    desc: "Design, build, and modernize cloud applications with reliable deployment, scalable infrastructure, and maintainable operations.",
+    tags: ["Cloud architecture", "Deployment", "Containerization", "Scalability"]
+  },
+  {
+    name: "Enterprise Resource Planning",
+    tag: "ERP",
+    icon: "saas",
+    desc: "Connected business systems that help organize operations, manage information, and bring important workflows into one place.",
+    tags: ["Business workflows", "Data management", "Reporting", "System integration"]
+  },
+  {
+    name: "IT Consulting",
+    tag: "Consulting",
+    icon: "software",
+    desc: "Practical technology guidance for selecting the right tools, planning improvements, integrating systems, and making informed technical decisions.",
+    tags: ["Technology planning", "Architecture guidance", "Modernization", "Integration"]
+  },
+  {
+    name: "IT Technical Management",
+    tag: "IT Management",
+    icon: "support",
+    desc: "Technical support for the systems behind your business, with attention to reliability, maintenance, updates, access, and day-to-day operations.",
+    tags: ["Technical support", "Maintenance", "System updates", "Reliability"]
+  },
+  {
+    name: "Digital Marketing",
+    tag: "Marketing",
+    icon: "marketing",
+    desc: "Digital campaigns and online growth support that help businesses explain their value, reach relevant audiences, and generate enquiries.",
+    tags: ["Campaign planning", "Social media", "Lead generation", "Performance review"]
+  },
+  {
+    name: "SEO & Search Indexing",
+    tag: "SEO",
+    icon: "seo",
+    desc: "Search-friendly site structure, technical SEO, indexing support, and content improvements that help search engines understand your website.",
+    tags: ["Technical SEO", "Search Console", "Sitemaps", "On-page structure"]
+  },
+  {
+    name: "UI/UX Design",
+    tag: "Design",
+    icon: "design",
+    desc: "Clear, consistent digital experiences with thoughtful layouts, intuitive navigation, and responsive interfaces for real users.",
+    tags: ["User experience", "Interface design", "Responsive layouts", "Prototyping"]
+  },
+  {
+    name: "AI Solutions & Automation",
+    tag: "AI",
+    icon: "ai",
+    desc: "Useful AI features and workflow automation for businesses looking to reduce repetitive work and make information easier to use.",
+    tags: ["AI integrations", "Workflow automation", "Document search", "Productivity tools"]
+  },
+  {
+    name: "Domains & Hosting",
+    tag: "Infrastructure",
+    icon: "hosting",
+    desc: "Help with domains, hosting, deployment, SSL, and DNS so your digital presence can launch on a dependable foundation.",
+    tags: ["Domains & DNS", "Hosting setup", "SSL", "Deployment"]
+  },
+  {
+    name: "Global Travel Services",
+    tag: "Travel",
+    icon: "speed",
+    desc: "Digital experiences for travel and tourism businesses, helping visitors discover destinations, explore packages, and enquire about trips with a clear, responsive journey.",
+    tags: ["Destination experiences", "Tour listings", "Booking enquiries", "Mobile-friendly pages"]
+  }
 ];

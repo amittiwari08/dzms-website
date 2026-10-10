@@ -2,10 +2,10 @@ import { useReveal, useCountUp } from "../hooks/useReveal.js";
 import Magnetic from "./Magnetic.jsx";
 
 const STATS = [
-  { value: 240, suffix: "+", label: "Projects shipped" },
-  { value: 18, suffix: "+", label: "Industries served" },
-  { value: 97, suffix: "%", label: "Client retention" },
-  { value: 4, suffix: "wk", label: "Avg. time to launch" }
+  { value: 12, suffix: "", label: "Service capabilities" },
+  { value: 3, suffix: "", label: "Featured projects" },
+  { value: 7, suffix: "", label: "Delivery stages" },
+  { value: 4, suffix: "", label: "Digital focus areas" }
 ];
 
 function RevealLine({ children, delay = 0 }) {
@@ -21,8 +21,7 @@ function Stat({ value, suffix, label }) {
   const [ref, count] = useCountUp(value);
   return (
     <div ref={ref} className="flex flex-col items-center gap-1">
-      <span className="font-head text-[34px] font-bold">{count}</span>
-      <span className="ml-0.5 font-head text-xl font-bold text-milano">{suffix}</span>
+      <span className="font-head text-[34px] font-bold">{count}{suffix}</span>
       <span className="text-[13px] text-muted">{label}</span>
     </div>
   );
@@ -53,14 +52,14 @@ export default function Hero() {
 
       <div className="relative z-[1] mx-auto max-w-[920px] px-7 text-center">
         <p className="mb-[22px] inline-flex items-center gap-2 rounded-full border border-border bg-chiffon px-4 py-[7px] text-[13px] font-semibold uppercase tracking-wider text-milano">
-          Digital Transformation, Delivered
+          Digital Solutions That Move Business Forward
         </p>
 
         <h1 className="font-head text-[clamp(38px,6.4vw,74px)] font-bold">
-          <RevealLine>We turn businesses</RevealLine>
+          <RevealLine>Powering Your</RevealLine>
           <br />
           <RevealLine delay={90}>
-            into <em className="not-italic text-milano">digital-first</em> ones.
+            <em className="not-italic text-milano">Digital Future</em>
           </RevealLine>
         </h1>
 
@@ -68,8 +67,7 @@ export default function Hero() {
           ref={subRef}
           className={`reveal-up ${subIn ? "in-view" : ""} mx-auto mt-[26px] max-w-[600px] text-[17.5px] leading-relaxed text-muted`}
         >
-          Websites, apps, software, AI and everything in between — built by one team,
-          for founders, hospitals, schools, restaurants, and everyone building something real.
+          We combine technology, creativity, and business expertise to build digital solutions that help ambitious businesses grow, operate smarter, and stay ahead.
         </p>
 
         <div
@@ -78,18 +76,18 @@ export default function Hero() {
         >
           <Magnetic>
             <a
-              href="#contact"
+              href="#services"
               className="rounded-full bg-milano px-8 py-[17px] text-base font-semibold text-white shadow-[0_8px_24px_-8px_rgba(169,14,2,0.55)] transition-all hover:-translate-y-0.5 hover:bg-milano-hover"
             >
-              Start Your Project
+              Explore Our Services
             </a>
           </Magnetic>
           <Magnetic>
             <a
-              href="#portfolio"
+              href="#contact"
               className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-[17px] text-base font-semibold transition-all hover:-translate-y-0.5 hover:border-ink"
             >
-              <span>See Our Work</span>
+              <span>Start A Project</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

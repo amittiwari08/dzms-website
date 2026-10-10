@@ -1,8 +1,38 @@
 export const TESTIMONIALS = [
-  { name: "Aditi R.", role: "Founder, Verdant Foods", quote: "They understood our ordering flow better than we did. Launch took under a month.", initials: "AR" },
-  { name: "Marcus J.", role: "COO, Kestrel Logistics", quote: "The dashboard now runs our whole dispatch team. Support has been there every step.", initials: "MJ" },
-  { name: "Dr. Sana P.", role: "Director, Meridian Health", quote: "Patient bookings went digital without a single confused phone call. Genuinely smooth.", initials: "SP" },
-  { name: "Rohit K.", role: "Principal, Bright Path Schools", quote: "Admissions season used to be chaos. Now it's a dashboard we actually enjoy using.", initials: "RK" },
-  { name: "Elena T.", role: "Head of Growth, Lucid Finance", quote: "Premium design, fast delivery, and they still show up months after launch.", initials: "ET" },
-  { name: "Farhan A.", role: "Owner, Northgate Realty", quote: "Our lead volume doubled within the first quarter after the new site went live.", initials: "FA" }
+  {
+    name: "Clear project scope",
+    role: "Planning & discovery",
+    quote: "We start by understanding your goals, audience, required features, and priorities before recommending a practical solution.",
+    initials: "CS"
+  },
+  {
+    name: "Business-focused builds",
+    role: "Web, apps & systems",
+    quote: "Technology choices should solve real business needs, support users, and fit the way your team works.",
+    initials: "BB"
+  },
+  {
+    name: "Responsive experiences",
+    role: "Mobile to desktop",
+    quote: "Interfaces are planned to stay clear and usable across the screen sizes your customers actually use.",
+    initials: "RE"
+  },
+  {
+    name: "Search-ready foundations",
+    role: "SEO & performance",
+    quote: "We consider page structure, load performance, and discoverability as part of building a strong digital presence.",
+    initials: "SF"
+  },
+  {
+    name: "Thoughtful deployment",
+    role: "Domains, hosting & cloud",
+    quote: "We help bring the project online with the hosting, domain, and deployment setup that fits the agreed scope.",
+    initials: "TD"
+  },
+  {
+    name: "Support beyond launch",
+    role: "Maintenance & improvement",
+    quote: "Digital products can evolve after release; maintenance and improvement can be planned around your ongoing needs.",
+    initials: "SL"
+  }
 ];

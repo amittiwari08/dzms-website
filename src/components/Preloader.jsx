@@ -23,7 +23,7 @@ export default function Preloader() {
         done ? "opacity-0 invisible" : "opacity-100 visible"
       }`}
     >
-      <div className="font-head font-bold text-[28px] text-chiffon tracking-tight">DZMS</div>
+      <div className="font-head font-bold text-[20px] text-chiffon tracking-tight">DZ MARKETING SOLUTIONS</div>
       <div className="w-[180px] h-[2px] rounded-full bg-white/15 overflow-hidden">
         <span
           className="block h-full bg-milano transition-[width] duration-500 ease-out"

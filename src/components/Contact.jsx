@@ -4,14 +4,28 @@ import { useReveal } from "../hooks/useReveal.js";
 import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY, NOTIFY_EMAILS } from "../emailConfig.js";
 
 const TOTAL_STEPS = 8;
-const SERVICE_OPTIONS = ["Website", "App", "SEO", "Marketing", "AI", "Cloud", "Branding", "Software"];
+const SERVICE_OPTIONS = [
+  "IT Application Development Services",
+  "Mobile App Development",
+  "Cloud Application Services",
+  "ERP / Business Systems",
+  "IT Consulting",
+  "IT Technical Management",
+  "Digital Marketing",
+  "SEO & Search Indexing",
+  "UI/UX Design",
+  "AI & Automation",
+  "Domains & Hosting",
+  "Global Travel Services",
+  "Other"
+];
 const BUSINESS_OPTIONS = ["Startup", "Company", "Restaurant", "Hospital", "School", "Agency", "Other"];
 const TIMELINE_OPTIONS = ["ASAP", "2 Weeks", "1 Month", "Flexible"];
 
 const EMPTY_DATA = {
   service: null,
   businessType: null,
-  budget: 150000,
+  budget: 15000,
   customBudget: false,
   customAmount: "",
   timeline: null,
@@ -215,18 +229,24 @@ export default function Contact() {
     <section id="contact" className="bg-chiffon">
       <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-start gap-[60px] px-7 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
-          <p className="eyebrow reveal-up in-view">Let&apos;s Build Together</p>
+          <p className="eyebrow reveal-up in-view">Start a Conversation</p>
           <h2 ref={introRef} className={`section-title reveal-up ${introIn ? "in-view" : ""}`}>
-            Tell us about your project.
+            Tell us what you want to build.
           </h2>
           <p className="section-sub reveal-up in-view">
-            Eight quick steps. No account, no spam — just a real reply from a real person within one business day.
+            Share your goals, requirements, timeline, and budget. The details help us understand your project before we follow up.
           </p>
 
           <div className="mt-[34px] flex flex-col gap-[18px]">
             <div>
               <strong className="block text-base">ceo@dzms.co.in</strong>
-              <span className="text-[13.5px] text-muted">General &amp; project enquiries</span>
+              <span className="text-[13.5px] text-muted">Project and general enquiries</span>
+            </div>
+            <div>
+              <strong className="block text-base">
+                <a href="tel:9654034295" className="transition-colors hover:text-milano">+91 96540 34295</a>
+              </strong>
+              <span className="text-[13.5px] text-muted">Call us about your project</span>
             </div>
           </div>
         </div>
@@ -244,21 +264,21 @@ export default function Contact() {
           <div className={shake ? "animate-shake" : ""}>
             {step === 1 && (
               <div>
-                <h3 className="mb-[22px] text-xl font-bold">What do you need help with?</h3>
+                <h3 className="mb-[22px] text-xl font-bold">Which service are you interested in?</h3>
                 <OptionGrid options={SERVICE_OPTIONS} selected={data.service} onSelect={(v) => update({ service: v })} />
               </div>
             )}
 
             {step === 2 && (
               <div>
-                <h3 className="mb-[22px] text-xl font-bold">What kind of business is this for?</h3>
+                <h3 className="mb-[22px] text-xl font-bold">What type of business is this for?</h3>
                 <OptionGrid options={BUSINESS_OPTIONS} selected={data.businessType} onSelect={(v) => update({ businessType: v })} />
               </div>
             )}
 
             {step === 3 && (
               <div>
-                <h3 className="mb-[22px] text-xl font-bold">What&apos;s your rough budget?</h3>
+                <h3 className="mb-[22px] text-xl font-bold">What budget range are you considering?</h3>
 
                 {!data.customBudget ? (
                   <>
@@ -268,15 +288,15 @@ export default function Contact() {
                     </div>
                     <input
                       type="range"
-                      min="25000"
+                      min="15000"
                       max="1000000"
-                      step="25000"
+                      step="5000"
                       value={data.budget}
                       onChange={(e) => update({ budget: e.target.value })}
                       className="w-full accent-milano"
                     />
                     <div className="mt-2 flex justify-between text-[12.5px] text-muted">
-                      <span>₹25k</span>
+                      <span>₹15k</span>
                       <span>₹10L+</span>
                     </div>
                     <button
@@ -316,19 +336,19 @@ export default function Contact() {
 
             {step === 4 && (
               <div>
-                <h3 className="mb-[22px] text-xl font-bold">When do you want to get started?</h3>
+                <h3 className="mb-[22px] text-xl font-bold">When would you like to get started?</h3>
                 <OptionGrid options={TIMELINE_OPTIONS} selected={data.timeline} onSelect={(v) => update({ timeline: v })} />
               </div>
             )}
 
             {step === 5 && (
               <div>
-                <h3 className="mb-[22px] text-xl font-bold">Tell us a bit more about the project.</h3>
+                <h3 className="mb-[22px] text-xl font-bold">Tell us more about your requirements.</h3>
                 <textarea
                   rows={6}
                   value={data.description}
                   onChange={(e) => update({ description: e.target.value })}
-                  placeholder="What are you trying to build, and what does success look like?"
+                  placeholder="What would you like to build or improve?"
                   className="w-full rounded-[10px] border border-border p-4 text-[14.5px] outline-none focus:border-milano"
                 />
               </div>
@@ -445,7 +465,7 @@ export default function Contact() {
                 </div>
                 <h3 className="mb-2.5 text-[23px] font-bold">You&apos;re all set.</h3>
                 <p className="mx-auto mb-6 max-w-[360px] text-[14.5px] text-muted">
-                  Your project details are in — our team will reply within one business day with next steps.
+                  Your project details have been captured. The team can review your requirements and follow up with next steps.
                 </p>
                 <button
                   type="button"

@@ -48,9 +48,9 @@ export default function FAQ() {
   return (
     <section id="faq">
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">Questions</p>
+        <p className="eyebrow reveal-up in-view">Frequently Asked Questions</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          Everything you&apos;re probably wondering.
+          Answers to common project questions.
         </h2>
 
         <div className="mt-11 flex max-w-[440px] items-center gap-2.5 rounded-full border border-border px-[18px] py-3.5 text-muted">

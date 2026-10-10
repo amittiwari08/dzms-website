@@ -18,9 +18,9 @@ export default function TechStack() {
   return (
     <section>
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">Under The Hood</p>
+        <p className="eyebrow reveal-up in-view">Tools & Technologies</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          Modern technology, chosen deliberately.
+          Practical technology choices for reliable digital products.
         </h2>
 
         <div className="mt-[50px] grid grid-cols-3 gap-3 sm:grid-cols-6">

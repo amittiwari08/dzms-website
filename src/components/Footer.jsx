@@ -3,7 +3,7 @@ import Logo from "./Logo.jsx";
 
 const FOOTER_COLS = [
   { heading: "Company", links: ["About", "Our Process", "Work", "FAQ"], hrefs: ["#home", "#process", "#portfolio", "#faq"] },
-  { heading: "Services", links: ["Website Development", "App Development", "AI & Automation", "Cloud & DevOps"], hrefs: ["#services", "#services", "#services", "#services"] },
+  { heading: "Services", links: ["IT Application Development Services", "Cloud Application Services", "SEO & Search Indexing", "Digital Marketing"], hrefs: ["#services", "#services", "#services", "#services"] },
   { heading: "Industries", links: ["Healthcare", "Education", "Real Estate", "Retail & Ecommerce"], hrefs: ["#industries", "#industries", "#industries", "#industries"] }
 ];
 
@@ -13,7 +13,7 @@ export default function Footer() {
 
   function onSubscribe(e) {
     e.preventDefault();
-    setNote("Thanks — you're subscribed.");
+    setNote("Thanks for your interest. Newsletter updates will be available soon.");
     setEmail("");
   }
 
@@ -25,7 +25,7 @@ export default function Footer() {
             <Logo variant="light" />
           </a>
           <p className="mt-4 max-w-[280px] text-[13.5px] leading-relaxed text-white/50">
-            A digital transformation partner for businesses of every kind — from first-time founders to established enterprises.
+            DZ Marketing Solutions helps businesses build a stronger digital presence through websites, applications, cloud solutions, SEO, and digital marketing.
           </p>
           <div className="mt-[22px] flex gap-2.5">
             {["in", "X", "ig", "dr"].map((label) => (
@@ -53,8 +53,8 @@ export default function Footer() {
         ))}
 
         <div className="col-span-2 lg:col-span-1">
-          <p className="mb-[18px] text-xs uppercase tracking-wider text-white/40">Stay in the loop</p>
-          <p className="mb-4 text-[13.5px] text-white/50">Occasional notes on what we&apos;re building. No spam.</p>
+          <p className="mb-[18px] text-xs uppercase tracking-wider text-white/40">Digital Updates</p>
+          <p className="mb-4 text-[13.5px] text-white/50">News and practical tips about websites, apps, SEO, and digital growth.</p>
           <form onSubmit={onSubscribe} className="flex gap-2">
             <input
               type="email"
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-2.5 px-7 py-6 text-[12.5px] text-white/40">
-        <p>© 2026 DZMS Digital Transformation Pvt. Ltd. All rights reserved.</p>
+        <p>© 2026 DZ Marketing Solutions Pvt. Ltd. All rights reserved.</p>
         <div className="flex gap-5">
           <a href="#" className="hover:text-white">Privacy Policy</a>
           <a href="#" className="hover:text-white">Terms of Service</a>

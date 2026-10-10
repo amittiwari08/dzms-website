@@ -1,7 +1,7 @@
 import { useReveal } from "../hooks/useReveal.js";
 
-const OTHERS = ["Slow, unclear timelines", "Outdated design patterns", "Support disappears post-launch", "Generic, templated builds", "SEO treated as an afterthought"];
-const US = ["Premium, considered design", "Fast, transparent delivery", "SEO-ready from day one", "Secure & built to scale", "Dedicated support, always"];
+const OTHERS = ["Unclear scope and expectations", "Disconnected tools and workflows", "Mobile experience overlooked", "Search visibility considered late", "Limited handover after launch"];
+const US = ["Agreed scope and milestones", "Solutions shaped around workflows", "Responsive design across devices", "SEO and performance foundations", "Deployment guidance and support options"];
 
 export default function Compare() {
   const [titleRef, titleIn] = useReveal();
@@ -10,9 +10,9 @@ export default function Compare() {
   return (
     <section>
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">Why DZMS</p>
+        <p className="eyebrow reveal-up in-view">Why DZ Marketing Solutions</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          The difference shows before we've written a line of code.
+          A practical, connected approach to your digital goals.
         </h2>
 
         <div
@@ -20,7 +20,7 @@ export default function Compare() {
           className={`reveal-up ${tableIn ? "in-view" : ""} mt-[50px] grid grid-cols-1 overflow-hidden rounded-[28px] border border-border sm:grid-cols-2`}
         >
           <div className="bg-white px-[38px] py-10">
-            <p className="mb-6 font-head text-[19px] font-bold">Typical Agencies</p>
+            <p className="mb-6 font-head text-[19px] font-bold">Common Project Challenges</p>
             <ul>
               {OTHERS.map((item) => (
                 <li key={item} className="flex items-center gap-3 border-b border-black/5 py-3 text-[15px] last:border-b-0">
@@ -30,7 +30,7 @@ export default function Compare() {
             </ul>
           </div>
           <div className="bg-ink px-[38px] py-10 text-white">
-            <p className="mb-6 font-head text-[19px] font-bold">DZMS</p>
+            <p className="mb-6 font-head text-[19px] font-bold">Our Approach</p>
             <ul>
               {US.map((item) => (
                 <li key={item} className="flex items-center gap-3 border-b border-white/10 py-3 text-[15px] last:border-b-0">

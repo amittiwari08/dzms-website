@@ -12,12 +12,12 @@ export default function Services() {
   return (
     <section id="services" className="bg-chiffon">
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">What We Build</p>
+        <p className="eyebrow reveal-up in-view">What We Do</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          One team. Every capability your business needs.
+          Services Built Around Your Goals
         </h2>
         <p className="section-sub reveal-up in-view">
-          Explore our services — hover or tap a category to see how we approach it.
+          From application development and cloud platforms to ERP, IT consulting, digital marketing, and SEO, we help businesses build and grow digitally.
         </p>
 
         <div className="mt-14 grid min-h-[460px] grid-cols-1 overflow-hidden rounded-[28px] border border-border bg-white md:grid-cols-[1fr_1.15fr]">
@@ -67,7 +67,7 @@ export default function Services() {
                 href="#contact"
                 className="rounded-full bg-milano px-[26px] py-3.5 text-[15px] font-semibold text-white shadow-[0_8px_24px_-8px_rgba(169,14,2,0.55)] transition-all hover:-translate-y-0.5 hover:bg-milano-hover"
               >
-                Talk to an Expert
+                Discuss Your Project
               </a>
             </Magnetic>
           </div>

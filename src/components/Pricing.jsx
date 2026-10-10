@@ -3,22 +3,22 @@ import Magnetic from "./Magnetic.jsx";
 
 const PLANS = [
   {
-    name: "Launch", value: "₹49,000", note: "starting",
-    desc: "A polished website for businesses getting online the right way.",
-    features: ["Up to 6 pages, custom designed", "Mobile-first & SEO-ready", "Basic hosting setup", "2 weeks of post-launch support"],
-    cta: "Get Free Quote", featured: false
+    name: "Website Launch", value: "₹15,000", note: "starting",
+    desc: "A professional digital presence for a business getting online or refreshing an existing site.",
+    features: ["Responsive website experience", "Clear service and contact information", "SEO-friendly page structure", "Domain and launch guidance"],
+    cta: "Get a Website Quote", featured: false
   },
   {
-    name: "Scale", value: "₹1,49,000", note: "starting", badge: "Most Popular",
-    desc: "Web or mobile app with custom features, built to grow with you.",
-    features: ["Custom web or mobile application", "API & database architecture", "Cloud deployment & DevOps setup", "90 days of dedicated support"],
-    cta: "Get Free Quote", featured: true
+    name: "Custom Solutions", value: "Custom", note: "project quote", badge: "Tailored to your needs",
+    desc: "A website, mobile app, portal, or business system planned around your workflows and users.",
+    features: ["Custom functionality and integrations", "Application and data architecture", "Deployment planning", "Scope-based delivery milestones"],
+    cta: "Discuss Your Project", featured: true
   },
   {
-    name: "Transform", value: "Custom", note: "scoped",
-    desc: "End-to-end SaaS, AI or enterprise builds with ongoing partnership.",
-    features: ["Full product & platform builds", "AI & automation integration", "Dedicated pod & account team", "Ongoing growth & maintenance"],
-    cta: "Book Free Consultation", featured: false
+    name: "Cloud & Business Systems", value: "Custom", note: "project quote",
+    desc: "Cloud applications, ERP, IT consulting, or connected systems for more complex requirements.",
+    features: ["Requirements and solution planning", "Cloud or business-system setup", "Security and reliability considerations", "Maintenance options by agreement"],
+    cta: "Book a Consultation", featured: false
   }
 ];
 
@@ -75,10 +75,10 @@ export default function Pricing() {
       <div className="mx-auto max-w-[1180px] px-7">
         <p className="eyebrow reveal-up in-view">Investment</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          Straightforward plans. No hidden scope.
+          Clear starting prices. Custom scope where needed.
         </h2>
         <p className="section-sub reveal-up in-view">
-          Every engagement is scoped to your business — these are starting points, not the ceiling.
+          Website projects start at ₹15,000. Applications, ERP, cloud, and other custom work are estimated after we understand your requirements.
         </p>
 
         <div className="mt-[54px] grid grid-cols-1 items-stretch gap-[22px] lg:grid-cols-3">

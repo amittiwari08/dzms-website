@@ -1,14 +1,14 @@
 export const INDUSTRIES = [
-  { name: "Healthcare", icon: "🏥", services: ["Website Development", "Custom Software", "AI Solutions & Automation", "Cloud & DevOps"] },
-  { name: "Education", icon: "🎓", services: ["Website Development", "Mobile App Development", "Custom Software", "Branding & UI/UX"] },
-  { name: "Restaurants", icon: "🍽️", services: ["Website Development", "Digital Marketing", "SEO & Search Indexing", "Mobile App Development"] },
-  { name: "Travel & Hotels", icon: "✈️", services: ["Website Development", "Mobile App Development", "SEO & Search Indexing", "Branding & UI/UX"] },
-  { name: "Real Estate", icon: "🏠", services: ["Website Development", "Custom Software", "Digital Marketing", "Performance Optimization"] },
-  { name: "Finance & Insurance", icon: "💳", services: ["Custom Software", "SaaS Development", "Cloud & DevOps", "Maintenance & Support"] },
-  { name: "Agriculture", icon: "🌾", services: ["Custom Software", "Mobile App Development", "AI Solutions & Automation", "Cloud & DevOps"] },
-  { name: "Manufacturing", icon: "🏭", services: ["Custom Software", "Cloud & DevOps", "AI Solutions & Automation", "Maintenance & Support"] },
-  { name: "Ecommerce & Retail", icon: "🛍️", services: ["Website Development", "Digital Marketing", "SEO & Search Indexing", "Performance Optimization"] },
-  { name: "Corporate & Enterprise", icon: "🏢", services: ["Custom Software", "SaaS Development", "Cloud & DevOps", "Branding & UI/UX"] },
-  { name: "Legal & Professional", icon: "⚖️", services: ["Website Development", "Branding & UI/UX", "SEO & Search Indexing", "Maintenance & Support"] },
-  { name: "NGOs & Government", icon: "🤝", services: ["Website Development", "Custom Software", "Digital Marketing", "Hosting & Domains"] }
+  { name: "Healthcare", icon: "🏥", services: ["IT Application Development Services", "Cloud Application Services", "IT Technical Management", "SEO & Search Indexing"] },
+  { name: "Education", icon: "🎓", services: ["IT Application Development Services", "Enterprise Resource Planning", "UI/UX Design", "Digital Marketing"] },
+  { name: "Hospitality & Restaurants", icon: "🍽️", services: ["IT Application Development Services", "Digital Marketing", "SEO & Search Indexing", "Domains & Hosting"] },
+  { name: "Travel & Tourism", icon: "✈️", services: ["Global Travel Services", "Mobile App Development", "UI/UX Design", "SEO & Search Indexing"] },
+  { name: "Real Estate", icon: "🏠", services: ["IT Application Development Services", "Enterprise Resource Planning", "Digital Marketing", "IT Technical Management"] },
+  { name: "Finance & Insurance", icon: "💳", services: ["IT Consulting", "Enterprise Resource Planning", "Cloud Application Services", "IT Technical Management"] },
+  { name: "Agriculture", icon: "🌾", services: ["IT Application Development Services", "Mobile App Development", "Enterprise Resource Planning", "Cloud Application Services"] },
+  { name: "Manufacturing", icon: "🏭", services: ["Enterprise Resource Planning", "IT Consulting", "Cloud Application Services", "IT Technical Management"] },
+  { name: "Ecommerce & Retail", icon: "🛍️", services: ["IT Application Development Services", "Digital Marketing", "SEO & Search Indexing", "IT Technical Management"] },
+  { name: "Corporate & Enterprise", icon: "🏢", services: ["IT Consulting", "Enterprise Resource Planning", "Cloud Application Services", "AI Solutions & Automation"] },
+  { name: "Legal & Professional", icon: "⚖️", services: ["IT Application Development Services", "UI/UX Design", "SEO & Search Indexing", "Domains & Hosting"] },
+  { name: "Public & Community Services", icon: "🤝", services: ["IT Application Development Services", "Enterprise Resource Planning", "Digital Marketing", "IT Technical Management"] }
 ];

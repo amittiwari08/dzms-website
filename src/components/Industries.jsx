@@ -9,12 +9,12 @@ export default function Industries() {
   return (
     <section id="industries">
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">Who We Work With</p>
+        <p className="eyebrow reveal-up in-view">Industries We Serve</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          Built for your industry, not a template.
+          Digital solutions tailored to the way your industry works.
         </h2>
         <p className="section-sub reveal-up in-view">
-          Select an industry to see the services we lean on most for businesses like yours.
+          Explore the digital services that can support your workflows, customers, and growth goals.
         </p>
 
         <div className="mt-12 grid grid-cols-2 gap-3.5 sm:grid-cols-3 lg:grid-cols-4">

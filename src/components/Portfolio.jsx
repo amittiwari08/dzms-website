@@ -82,12 +82,12 @@ export default function Portfolio() {
   return (
     <section id="portfolio">
       <div className="mx-auto max-w-[1180px] px-7">
-        <p className="eyebrow reveal-up in-view">Selected Work</p>
+        <p className="eyebrow reveal-up in-view">Selected Projects</p>
         <h2 ref={titleRef} className={`section-title reveal-up ${titleIn ? "in-view" : ""}`}>
-          A glimpse of what we've shipped.
+          Digital work across different business needs.
         </h2>
         <p className="section-sub reveal-up in-view">
-          Real client projects we've built and launched — click through to see them live.
+          Explore these project websites and platforms to see examples of digital experiences across different industries.
         </p>
 
         <div className="mt-[50px] grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
